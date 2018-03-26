@@ -41,6 +41,13 @@ npm install -g node-gyp
 
 (确认 `PATH` 中 `python` 路径是否设置。)
 
+**note**： 如果安装过程中，遇到以下phantomjs-prebuilt、jpegtran-bin包安装错误，可先单独安装，再执行安装依赖
+```shell
+// use --ignore-scripts
+npm install phantomjs-prebuilt@2.1.16 --ignore-scripts
+npm install jpegtran-bin@3.2.0 --ignore-scripts
+```
+
 安装完依赖后将以下配置写入根目录下的 `_config.yml` 文件中
 
 ``` yml
