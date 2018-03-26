@@ -31,6 +31,14 @@ npm install -g windows-build-tools
 npm install -g node-gyp
 ```
 
+**note** If you meet install problems, you should excute command like this.
+```shell
+// use --ignore-scripts
+npm install phantomjs-prebuilt@2.1.16 --ignore-scripts
+npm install jpegtran-bin@3.2.0 --ignore-scripts
+```
+
+
 Then configure the root `_config.yml` file:
 ```yml
 theme: hexo-theme-skapp
