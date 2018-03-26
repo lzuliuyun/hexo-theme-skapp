@@ -1,24 +1,24 @@
 
 # Site
-title: MINFIVE
-subtitle: MINFIVE BLOG
+title: lzuliuyun
+subtitle: 起风了，唯有努力活下去；风起了，必须努力活下去
 subtitle_desc: 日常学习与兴趣交流
-keywords: minfive, minfive blog, 前端博客, 前端, 程序员, 前端开发, 全栈开发, node.js, javascript
+keywords: lzuliuyun 前端 前端开发 程序员 node javascript js css angular react vue
 description: 日常学习与兴趣交流的个人博客
-introduction: 不思量，自难忘！
-favicon_ico: http://oo12ugek5.bkt.clouddn.com/blog/images/favicon.ico
-logo: http://oo12ugek5.bkt.clouddn.com/images/logo-text-white.png
-qrcode: http://oo12ugek5.bkt.clouddn.com/images/qrcode.png
-default_cover: http://oo12ugek5.bkt.clouddn.com/images/default_cover.png
-header_cover: http://oo12ugek5.bkt.clouddn.com/blog/images/banner.jpeg
-error_page_bg: http://oo12ugek5.bkt.clouddn.com/blog/images/dogs.jpg
+introduction: 唯有美食、爱、code不可辜负
+favicon_ico: http://p66xl7flj.bkt.clouddn.com/favicon.ico
+logo: http://p66xl7flj.bkt.clouddn.com/logo.png
+qrcode: http://p66xl7flj.bkt.clouddn.com/qrcode.png
+default_cover: http://p66xl7flj.bkt.clouddn.com/longmao-default.png
+header_cover: http://p66xl7flj.bkt.clouddn.com/longmao-big.jpg
+error_page_bg: http://p66xl7flj.bkt.clouddn.com/longmao-error.jpg
 author:
-  name: minfive
-  link: https://github.com/Mrminfive
+  name: lzuliuyun
+  link: https://github.com/lzuliuyun
 about:
   info: 本站是基于 Hexo 搭建的静态资源博客，主要用于分享日常学习、生活及工作的一些心得总结，欢迎点击右下角订阅 rss。
-  address: Guangzhou, Guangdong Province, China
-  email: chenxiaowu1994@outlook.com
+  address: Shenzhen, Guangdong Province, China
+  email: lzuliuyun@163.com
 
 # Menu
 menu:
@@ -30,4 +30,4 @@ menu:
 
 highlight_theme: normal
 
-loader_img: http://oo12ugek5.bkt.clouddn.com/blog/images/loader.gif
+loader_img: http://p66xl7flj.bkt.clouddn.com/load.gif
