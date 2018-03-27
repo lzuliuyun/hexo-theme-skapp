@@ -76,8 +76,8 @@ body {
     &--small {
         .page__navbar {
             height: $nav-height;
-            background: $main-color;
-            background: linear-gradient(to right, $main-color 35%, $main-color--hover 100%);
+            background: #252f35; //$main-color;
+            // background: linear-gradient(to right, $main-color 35%, $main-color--hover 100%);
         }
 
         .page__logo {

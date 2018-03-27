@@ -13,7 +13,7 @@
                 <i class="mark__icon iconfont icon-write"></i>
                 <ul class="mark__list clearfix">
                     <li class="mark__item">
-                        <a href="{{ url_for(page.author.link || '') }}">{{ page.author.nick|default(get_setting(author.name)) }}</a>
+                        <a href="{{ url_for(page.author.link || '') }}">{{ page.author.nick|default(get_setting(author.name)) || theme.author.name }}</a>
                     </li>
                 </ul>
             </div>
@@ -33,6 +33,12 @@
                             <a href="{{ url_for(tag.path) }}">{{ titlecase(tag.name) }}</a>
                         </li>
                     {% endfor %}
+
+                    {% if !page.tags.length %} 
+                        <li class="mark__item">
+                            <a href="#">无</a>
+                        </li>
+                    {% endif %}
                 </ul>
             </div>
 

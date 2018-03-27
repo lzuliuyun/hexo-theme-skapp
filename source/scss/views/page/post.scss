@@ -64,13 +64,13 @@ body {
         margin-right: 5px;
 
         & > span {
-            vertical-align: middle;
+            // vertical-align: middle;
         }
 
         & > a {
             @include link($main-color);
             color: $main-fc;
-            vertical-align: middle;
+            // vertical-align: middle;
         }
 
         &:not(:last-child)::after {
