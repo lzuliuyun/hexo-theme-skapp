@@ -57,3 +57,24 @@ window.addEventListener('load', function() {
 
     window._skappPostAnimation();
 });
+
+setTimeout(function() {
+    var $window = $(window);
+    var interval = setInterval(function() {
+        if (typeof $window.hashchange === 'function') {
+            /* 绑定事件*/
+            $window.hashchange(function () {
+                var target = $(decodeURI(location.hash));
+                if (target.length == 1) {
+                    var top = target.offset().top - 60;
+                    if (top > 0) {
+                        $('html,body').animate({ scrollTop: top }, 500);
+                    }
+                }
+            });
+            /* 触发事件 */
+            $window.hashchange();
+            clearInterval(interval);
+        }
+    }, 100);
+}, 50);

@@ -33,6 +33,9 @@
         {% endblock %}
     </div>
 
+    <script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://p66xl7flj.bkt.clouddn.com/jquery.hashchange.plugin.js"></script>
+
     <!-- build:js /js/common.js -->
         <script type="text/javascript" src="js/common/utils.js"></script>
         <script type="text/javascript" src="js/common/pack.js"></script>

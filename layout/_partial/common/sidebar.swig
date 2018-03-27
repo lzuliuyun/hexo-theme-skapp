@@ -12,6 +12,11 @@
         </label>
     </form>
 
+    <div id="toc" class="sidebar__block">
+        <h3 class="block__title">目录</h3>
+        {{ toc(page.content, {list_number: false}) }}
+    </div>
+
     {% if get_setting('description') %}
         <div class="sidebar__block">
             <h3 class="block__title">{{ __('aside.introduction') }}</h3>
