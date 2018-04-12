@@ -54,6 +54,14 @@
     </header>
 
     <div class="post__content">
+        <blockquote>
+            <p>
+                {{ page.subtitle }}
+            </p>
+        </blockquote>
+    </div>
+
+    <div class="post__content">
         {{ render(page.content) }}
 
         {% if page.editor %}
