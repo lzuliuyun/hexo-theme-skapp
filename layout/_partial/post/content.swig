@@ -53,13 +53,15 @@
         </div>
     </header>
 
-    <div class="post__content">
-        <blockquote>
-            <p>
-                {{ page.subtitle }}
-            </p>
-        </blockquote>
-    </div>
+    {% if page.subtitle.length > 0 %}
+        <div class="post__content">
+            <blockquote>
+                <p>
+                    {{ page.subtitle }}
+                </p>
+            </blockquote>
+        </div>
+    {% endif %}
 
     <div class="post__content">
         {{ render(page.content) }}
