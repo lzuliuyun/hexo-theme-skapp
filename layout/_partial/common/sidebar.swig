@@ -7,15 +7,17 @@
 
     <form id="page-search-from" class="page__search-from" action="/search/">
         <label class="search-form__item">
-            <input class="input" type="text" name="search" placeholder="Search...">
+            <input class="input" type="text" name="search" placeholder="搜索...">
             <i class="iconfont icon-search"></i>
         </label>
     </form>
 
-    <div id="toc" class="sidebar__block">
-        <h3 class="block__title">目录</h3>
-        {{ toc(page.content, {list_number: false}) }}
-    </div>
+    {% if is_post() %}
+        <div id="toc" class="sidebar__block">
+            <h3 class="block__title">目录</h3>
+            {{ toc(page.content, {list_number: false}) }}
+        </div>
+    {% endif %}
 
     {% if get_setting('description') %}
         <div class="sidebar__block">
