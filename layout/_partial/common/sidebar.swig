@@ -15,7 +15,7 @@
     {% if is_post() %}
         <div id="toc" class="sidebar__block">
             <h3 class="block__title">目录</h3>
-            {{ toc(page.content, {list_number: false}) }}
+            {{ toc(page.content, {list_number: true}) }}
         </div>
     {% endif %}
 
@@ -28,9 +28,9 @@
 
     <div class="sidebar__block">
         <h3 class="block__title">{{ __('aside.categorie') }}</h3>
-        {{ list_categories({ order: -1, class: 'block' }) }}
+        {{ list_categories({ order: 1, class: 'block' }) }}
     </div>
-    
+
     <div class="sidebar__block">
         <h3 class="block__title">{{ __('aside.latest_post') }}</h3>
         {{ latest_post(4) }}

@@ -17,7 +17,7 @@ hexo.extend.generator.register('lunr', function(locals){
         lunrConfig = config.lunr,
         field = (lunrConfig.field||'').trim(),
         lunrPath = lunrConfig.path,
-        posts = [], 
+        posts = [],
         pages = [],
         items,
         res = {"all":[]},
@@ -41,14 +41,14 @@ hexo.extend.generator.register('lunr', function(locals){
     //grouping
     items.forEach(function(post){
         if(post.date._isAMomentObject) {
-            year1 = post.date.format('YYYY');    
+            year1 = post.date.format('YYYY');
         } else {
             year1 = moment(post.date).format('YYYY');
         }
         if(!res[year1]){
-            res[year1] = [post];    
+            res[year1] = [post];
         } else {
-            res[year1].push(post);    
+            res[year1].push(post);
         }
         res.all.push(post);
     });
@@ -82,11 +82,11 @@ hexo.extend.generator.register('lunr', function(locals){
                         name: tag.name,
                         path: config.root + tag.path
                     });
-                });    
+                });
             }
             if (post.categories) {
                 post.categories.each(function(cate){
-                    cates.push(cate.name);    
+                    cates.push(cate.name);
                 });
             }
             bodyText = lunrConfig.fulltext ? post.content : post.excerpt;
@@ -110,8 +110,8 @@ hexo.extend.generator.register('lunr', function(locals){
                 date: moment(post.date).locale('zh-cn').format(),
                 day: moment(post.date).locale('zh-cn').format('D'),
                 month: moment(post.date).locale('zh-cn').format('MMMM'),
-                authorLink: post.author 
-                    && post.author.link 
+                authorLink: post.author
+                    && post.author.link
                     || hexo.config.author
                     && hexo.config.author.link
                     || hexo.theme.author
@@ -131,9 +131,9 @@ hexo.extend.generator.register('lunr', function(locals){
             data: JSON.stringify({
                 index: searchIdx.toJSON(),
                 store: store
-            }) 
+            })
         });
         store = {};
     }
-    return finalData;   
+    return finalData;
 });

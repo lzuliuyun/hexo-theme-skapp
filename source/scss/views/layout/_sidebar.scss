@@ -228,4 +228,25 @@ $title-falg-w: 4px      !default;
             white-space: nowrap;
         }
     }
+
+    ol {
+        padding-left: 20px;
+        list-style: none;
+
+        .toc-link {
+            text-decoration: none;
+            color: #666;
+        }
+
+        a {
+            display: block;
+            width: 100%;
+        }
+
+        a:hover {
+            background-color: #19abd6;
+            color: #eee;
+            cursor: pointer;
+        }
+    }
 }
