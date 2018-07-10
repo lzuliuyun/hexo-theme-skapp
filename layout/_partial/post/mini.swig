@@ -20,13 +20,15 @@
         <h3 itemprop="name" class="mini-article__title">
             <a itemprop="url" href="{{ url_for(post.path) }}" title="{{ post.title }}">{{ post.title }}</a>
         </h3>
-        <p class="mini-article__author">by 
+        <!--
+        <p class="mini-article__author">by
             <span itemprop="author" itemscope itemtype="http://schema.org/Person">
                 <a itemprop="url" href="{{ post.author.link }}" target="_blank">
                     <span itemprop="name">{{ titlecase(post.author.nick) }}</span>
                 </a>
             </span>
         </p>
+        -->
         <p itemprop="articleSection" class="min-article__desc">
             {{ post.subtitle }}
         </p>
